@@ -80,5 +80,9 @@ export default [
 	// {
 	// 	name : "VTouachAble",
 	// 	component : React.lazy(() => import('./views/VTouchAble'))
-	// }
+	// },
+	{
+		name : "VFlex",
+		component : React.lazy(() => import('./views/VFlex'))
+	}
 ];

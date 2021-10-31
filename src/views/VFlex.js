@@ -1,12 +1,46 @@
 import  React from "react";
-import {Image} from "react-native";
+import {View,StyleSheet} from "react-native";
 
 const VFlex = () => {
 	return (
 		<>
-			<Image source={"https://www.google.com/url?sa=i&url=https%3A%2F%2Fnilaigizi.com%2Fgizi%2Fdetailproduk%2F1249%2Fes-teh-manis&psig=AOvVaw14WcvVnZsXa2gwikr5St88&ust=1635725266146000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKil1dCt8_MCFQAAAAAdAAAAABAD"} />
+			<View style={styles.container}>
+				<View style={styles.ef_1}>
+					<View style={styles.ef_c_1}></View>
+					<View style={styles.ef_c_2}></View>
+					<View style={styles.ef_c_3}></View>
+				</View>
+			</View>
 		</>
 	);
 }
+
+const styles = StyleSheet.create({
+	container : {
+		flex : 1,
+		backgroundColor : 'white'
+	},
+
+	ef_1 : {
+		flex  : 1,
+		flexDirection : 'row',
+		backgroundColor  : 'red',
+	},
+
+	ef_c_1 : {	
+		flex : 4,
+		backgroundColor : 'blue'
+	},
+
+	ef_c_2 : {
+		flex : 4,
+		backgroundColor : 'green'
+	},
+
+	ef_c_3 : {
+		flex : 4,
+		backgroundColor : 'yellow'
+	}
+});
 
 export default VFlex
